@@ -1,34 +1,21 @@
 ---
 name: meridian-globe-atlas
 description: >
-  Operate Meridian 3D interactive globe: 8 investigation pipelines, 46 waypoints,
-  great-circle arcs, stages (lead/transit/field/evidence/analysis), case dossiers,
-  timeline replay, add-node, Zustand persist, react-globe.gl + Three.js. Publish,
-  backup Drive/GitHub, infographic. Use for Meridian, globe, waypoints, atlas.
+  Meridian Ultra Atlas v3: 41 people, 20 entities, 30 locations, DM-1..10 full detail,
+  8 pipelines start-to-finish, master timeline 1953-2026, BC-PIPE, schematic plates,
+  photo policy (wiki links only; victims never). Interactive Streamlit app_ultra.
 metadata:
-  short-description: "Meridian 3D globe atlas ops + publish/backup"
+  short-description: "Meridian ultra Epstein atlas full detail"
+  as-of: "2026-09-11"
+  version: "3.0.0-ultra"
 user-invocable: true
 ---
 
-# Meridian Globe Atlas
+# Meridian Globe Atlas — Ultra
 
-As-of: 2026-09-11
+```bash
+streamlit run /workspace/artifacts/investigation-complete/app.py
+```
 
-## Stack
-TanStack Start + React 19 + Tailwind v4 + Zustand (persist meridian.v3) + react-globe.gl + Three.js
-
-## Pipelines (8)
-E66-01 · EF-02 · MX-03 · PBP-04 (paused CONTRADICTED) · DW-05 · AU-06 · SW-07 · PO-08
-
-## Stages
-lead · transit · field · evidence · analysis
-
-## Key files
-- `src/lib/seed.ts` — waypoints
-- `src/lib/store.ts` — persist + migrate
-- `src/lib/cities.ts` — geo lookup
-- `src/components/globe-view.tsx` — arcs/points/rings/plane
-- `src/components/overlay.tsx` / composer.tsx / meridian-app.tsx
-
-## Ops
-labelsData = selected.waypoints only · placing banner for add-node · public ceiling in dossiers
+Data: MERIDIAN_ULTRA_ATLAS.json / .md · plates/ schematic only
+Ceiling: public record · PBP CONTRADICTED · no victim photos · no deepfakes
